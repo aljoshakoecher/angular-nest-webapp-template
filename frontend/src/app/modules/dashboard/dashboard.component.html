@@ -2,20 +2,17 @@
     <h2 class="text-muted">Dashboard <small>Statistics Overview</small></h2>
     <div class="row">
         <div class="col-md-12">
-            <ngb-carousel>
-                <ng-template *ngFor="let slider of sliders" ngbSlide>
-                    <img
-                        [src]="slider.imagePath"
-                        alt="Random first slide"
-                        class="img-fluid mx-auto d-block"
-                        width="100%"
-                    />
-                    <div class="carousel-caption">
-                        <h3>{{ slider.label }}</h3>
-                        <p>{{ slider.text }}</p>
+                <div class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item-active" *ngFor="let slider of sliders">
+                            <img [src]="slider.imagePath" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>{{slider.label}}</h5>
+                                <p>{{slider.text}}</p>
+                            </div>
+                        </div>
                     </div>
-                </ng-template>
-            </ngb-carousel>
+                </div>
         </div>
     </div>
     <hr />
@@ -39,9 +36,9 @@
         </div>
     </div>
     <hr />
-    <ngb-alert (close)="closeAlert(alert)" *ngFor="let alert of alerts" [type]="alert.type">{{
+    <!-- <ngb-alert (close)="closeAlert(alert)" *ngFor="let alert of alerts" [type]="alert.type">{{
         alert.message
-    }}</ngb-alert>
+    }}</ngb-alert> -->
     <hr />
     <div class="row">
         <div class="col-lg-8">

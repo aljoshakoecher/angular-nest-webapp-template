@@ -16,7 +16,7 @@
             Tooltip on left
         </button>
         <ng-template #StaticTipContent><em>Tooltip</em> <u>with</u> <b>HTML</b></ng-template>
-        <button [ngbTooltip]="StaticTipContent" class="btn btn-secondary" data-html="true" type="button">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip </em> <u>with</u> <b>HTML</b>">
             Tooltip with HTML
         </button>
     </div>

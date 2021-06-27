@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PageHeaderModule } from '../../shared';
 
 import { BsComponentRoutingModule } from './bs-component-routing.module';
@@ -23,15 +22,15 @@ import {
 } from './components';
 
 @NgModule({
-    imports: [CommonModule, BsComponentRoutingModule, FormsModule, ReactiveFormsModule, NgbModule, PageHeaderModule],
+    imports: [CommonModule, BsComponentRoutingModule, FormsModule, ReactiveFormsModule, PageHeaderModule],
     declarations: [
         BsComponentComponent,
         ButtonsComponent,
         AlertComponent,
-        ModalComponent,
         CollapseComponent,
         DatePickerComponent,
         DropdownComponent,
+        ModalComponent,
         PaginationComponent,
         PopOverComponent,
         ProgressbarComponent,

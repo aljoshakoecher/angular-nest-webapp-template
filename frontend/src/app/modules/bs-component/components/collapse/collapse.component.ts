@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
     styleUrls: ['./collapse.component.scss']
 })
 export class CollapseComponent {
-    public isCollapsed = false;
 }
