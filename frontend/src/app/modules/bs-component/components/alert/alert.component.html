@@ -4,11 +4,10 @@
             <div class="card-header">Buttons</div>
             <div class="card-body">
                 <div *ngFor="let alert of alerts">
-                    <div class="alert" [class]="'alert-'+ alert.type" >
+                    <div class="alert alert-dismissible fade show" [class]="'alert-'+ alert.type" role="alert">
                         {{alert.message}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
-                    <button type="button" class="btn-close"></button>
-                    <!-- <ngb-alert (close)="closeAlert(alert)" [type]="alert.type">{{ alert.message }}</ngb-alert> -->
                 </div>
             </div>
         </div>
