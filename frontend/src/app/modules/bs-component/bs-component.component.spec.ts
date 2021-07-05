@@ -5,22 +5,22 @@ import { BsComponentComponent } from './bs-component.component';
 import { BsComponentModule } from './bs-component.module';
 
 describe('BsComponentComponent', () => {
-    let component: BsComponentComponent;
-    let fixture: ComponentFixture<BsComponentComponent>;
+	let component: BsComponentComponent;
+	let fixture: ComponentFixture<BsComponentComponent>;
 
-    beforeEach(waitForAsync(() => {
-        TestBed.configureTestingModule({
-            imports: [BsComponentModule, RouterTestingModule]
-        }).compileComponents();
-    }));
+	beforeEach(waitForAsync(() => {
+		TestBed.configureTestingModule({
+			imports: [BsComponentModule, RouterTestingModule]
+		}).compileComponents();
+	}));
 
-    beforeEach(() => {
-        fixture = TestBed.createComponent(BsComponentComponent);
-        component = fixture.componentInstance;
-        fixture.detectChanges();
-    });
+	beforeEach(() => {
+		fixture = TestBed.createComponent(BsComponentComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-    it('should create', () => {
-        expect(component).toBeTruthy();
-    });
+	it('should create', () => {
+		expect(component).toBeTruthy();
+	});
 });
