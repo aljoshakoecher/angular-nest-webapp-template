@@ -1,9 +1,15 @@
-# Angular-Nest-Webapp-Template
-
-An Admin web application built with Angular on the frontend and NestJS on the backend. Frontend is based on SB-Admin-Template.
-This is a template repository that you can use to start developing your own web application!
-
-:construction: Please note: The template is working finde, but the documentation is under construction. Please create an issue if you have any questions
+<h1 align="center">Angular-Nest-Webapp-Template</h1>
+<p align="center">
+	<img height="75px" src="https://camo.githubusercontent.com/5f54c0817521724a2deae8dedf0c280a589fd0aa9bffd7f19fa6254bb52e996a/68747470733a2f2f6e6573746a732e636f6d2f696d672f6c6f676f2d736d616c6c2e737667">
+	&emsp;&emsp;&emsp;
+	<img height="75px" src="https://github.com/angular/angular/raw/master/aio/src/assets/images/logos/angular/angular.png">
+	&emsp;&emsp;&emsp;
+    <img height="75px" src="https://camo.githubusercontent.com/a664defdd5c2ec93a3fbfb51e0f2aaafa5dc57bf1e13aa47456ced037b3cebe8/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e302f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67">
+</p>
+<p align="center">
+An Admin web application built with Angular and pure Bootstrap on the frontend and NestJS on the backend. Frontend is based on SB-Admin-Template but but uses Bootstrap v5 without any other dependencies. This is a template repository that you can use to start developing your own web application!
+</p>
+<hr>
 
 ## How to run
 
@@ -46,3 +52,8 @@ Basic instructions on how to add your own modules to the frontend:
 4. Add your own services: As services are typically used in more than one module, they should be put inside the `frontend/src/app/modules/shared` directory.
 
 ### Add your own modules to the backend
+As NestJS' modular approach and the way to handle things like routing and dependency injection is pretty similar to Angular, extending the backend is similar to extending the frontend. To add additional routes, you can simply:
+1. Open a terminal inside the routes folder and run `nest g module <yourModuleName>`. This will create a folder and a module inside the routes folder
+2. While still inside the routes folder, add a controller by executing `nest g controller <yourControllerName>`. This will generate you a controller.
+3. Repeat #2 for a service: `nest g service <yourServiceName>`
+4. You should be set up with your new backend route and can start implementing your logic. Make sure to import your module inside the imports of your app.module.ts  
