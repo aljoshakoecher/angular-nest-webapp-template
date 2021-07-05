@@ -7,7 +7,12 @@
     <img height="75px" src="https://camo.githubusercontent.com/a664defdd5c2ec93a3fbfb51e0f2aaafa5dc57bf1e13aa47456ced037b3cebe8/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e302f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67">
 </p>
 <p align="center">
-An Admin web application built with Angular and pure Bootstrap on the frontend and NestJS on the backend. Frontend is based on SB-Admin-Template but but uses Bootstrap v5 without any other dependencies. This is a template repository that you can use to start developing your own web application!
+	<b>A template repository you can use to start developing your own web application</b></br>
+	* Starter template for an admin-style web application</br>
+	* Monorepo with shared code that can be used in both frontend and backend</br>
+	* NestJS backend with an example route to get you started</br>
+	* Angular frontend using pure Bootstrap (no other dependencies)</br>
+	</ul>
 </p>
 <hr>
 
